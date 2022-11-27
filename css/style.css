@@ -6,6 +6,9 @@ body {
     color: #333333;
     font-weight: 400;
 }
+.h-100vh {
+    height: 100vh;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Urbanist', sans-serif;
    font-weight: 800;
@@ -163,6 +166,12 @@ span.navbar-toggler-icon {
     border: 2px solid #e9ecef;
     padding: 10px;
     margin-bottom: 15px;
+}
+.shape-img-1 {
+    top: 17px;
+    left: -80px;
+    position: absolute;
+    z-index: -1;
 }
 /* Contact page */
 .contact .card {
