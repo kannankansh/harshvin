@@ -10,6 +10,10 @@ body {
     font-family: 'Urbanist', sans-serif;
    font-weight: 800;
 }
+span.navbar-toggler-icon {
+    width: 1rem;
+    height: 1rem;
+}
 .navbar li.nav-item {
     padding: 0 10px;
 }
@@ -22,14 +26,18 @@ body {
     padding: 10px;
 }
 .dropdown-item.active, .dropdown-item:active {
-    background-color: #9d499b;
+    background-color: #19af63;
 }
 .list-bullet li {
     list-style-type: square;
 }
 .list-bullet li::marker {
     font-size: 1.3em;
-    color: #a253a2;
+    color: #19af63;
+}
+.navbar-nav .nav-link.active {
+    color: #22ae60;
+    font-weight: 600;
 }
 .slide-caption {
     background-color: #f89e35;
@@ -70,7 +78,7 @@ body {
   .banner-section .owl-carousel .owl-slide img {
     width: 100%;
     height: auto;
-    margin-top: 56.8px;
+    margin-top: 45px;
   }
   .banner-section .owl-carousel .owl-controls {
     position: absolute;
@@ -93,7 +101,7 @@ body {
     border-radius: 30px;
     font-size: 14px;
     color: #FFF;
-    background: #a253a2;
+    background: #19af63;
     opacity: 0.8;
     text-transform: uppercase;
     border-radius: 50px;
@@ -147,25 +155,94 @@ body {
   }
   
   .owl-dot.active {
-    background-color: #974198 !important;
+    background-color: #19af63 !important;
   }
   
+.client-img {
+    text-align: center;
+    border: 2px solid #e9ecef;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+/* Contact page */
+.contact .card {
+    position: relative;
+    margin: 150px auto 100px;
+    padding: 20px;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 0;
+  }
+  .contact .card .circle {
+    border-radius: 3px;
+    width: 150px;
+    height: 150px;
+    background: black;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    border-bottom-left-radius: 170px;
+  }
+  .contact .card .content {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .card h1 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .contact .card h2 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+  }
+  .contact .card .social {
+    margin-bottom: 5px;
+  }
+  .contact .card .social a {
+    text-decoration: none !important;
+    color: black;
+    margin-left: 8px;
+    font-weight: 300;
+  }
+  .contact .card .social a i {
+    font-weight: 400;
+  }
+  .contact .card .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact .card .location i {
+    color: red;
+  }
+  .contact .card .location p {
+    font-weight: 300;
+  }
+
+
+
+
+
+
+
+
 
 /* Footer */
 
 footer {
     padding: 2rem 0;
-    background-color: #9d499b;
+    background-color: #19af63;
   }
   
   .footer-column:not(:first-child) {
     padding-top: 2rem;
   }
-  @media (min-width: 768px) {
-    .footer-column:not(:first-child) {
-      padding-top: 0rem;
-    }
-  }
+
   
   .footer-column {
     text-align: center;
@@ -189,11 +266,7 @@ footer {
   .footer-column ul {
     display: inline-block;
   }
-  @media (min-width: 768px) {
-    .footer-column ul {
-      text-align: left;
-    }
-  }
+
   
   ul.social-buttons {
     margin-bottom: 0;
@@ -217,7 +290,7 @@ footer {
     color: #fff;
     border-radius: 100%;
     outline: 0;
-    background-color: #1a1d20;
+    background-color: #a253a4;
   }
   
   footer .quick-links {
@@ -238,11 +311,29 @@ footer {
     color: white;
     padding: 2rem 0;
   }
+  @media (min-width: 768px) {
+    .footer-column:not(:first-child) {
+      padding-top: 0rem;
+    }
+    .footer-column ul {
+        text-align: left;
+      }
+  }
+
 
 /* For mobile phones: */
   @media only screen and (max-width: 768px) {
     .banner-section .owl-carousel .owl-slide img {
       height: 550px;
       width: auto !important;
+    }
+    .navbar-brand img {
+        width:220px;
+    }
+    .col-reversed{
+        flex-direction: column-reverse;
+     }
+     .contact .card {
+        margin: 100px auto 50px;
     }
   }
