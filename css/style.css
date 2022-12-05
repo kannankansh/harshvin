@@ -328,8 +328,20 @@ footer {
         text-align: left;
       }
   }
-
-
+  .our-brands {
+    height: 80vh;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+.our-brands .client-img {
+  border: 0px solid #e9ecef !important;
+}
+.page-section {
+  justify-content: center;
+  align-items: center;
+}
 /* For mobile phones: */
   @media only screen and (max-width: 768px) {
     .banner-section .owl-carousel .owl-slide img {
@@ -344,5 +356,8 @@ footer {
      }
      .contact .card {
         margin: 100px auto 50px;
+    }
+    .media-section iframe {
+        width: 100% !important;
     }
   }
