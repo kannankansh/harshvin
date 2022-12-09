@@ -137,6 +137,7 @@ span.navbar-toggler-icon {
     padding: 15px;
     background: #F5F5F5;
     text-align: center;
+    margin-bottom: 30px;
 }
 .expertise-card:hover {
     background: #ffffff;
@@ -147,6 +148,7 @@ span.navbar-toggler-icon {
 .owl-dots{
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 10px;
   }
   
   .owl-dot {
@@ -339,7 +341,7 @@ footer {
       }
   }
   .our-brands {
-    height: 80vh;
+    min-height: 80vh;
     vertical-align: middle;
     justify-content: center;
     display: flex;
