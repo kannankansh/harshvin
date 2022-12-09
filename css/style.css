@@ -12,6 +12,7 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'Urbanist', sans-serif;
    font-weight: 800;
+   text-transform: uppercase;
 }
 span.navbar-toggler-icon {
     width: 1rem;
@@ -81,7 +82,7 @@ span.navbar-toggler-icon {
   .banner-section .owl-carousel .owl-slide img {
     width: 100%;
     height: auto;
-    margin-top: 45px;
+    margin-top: 65px;
   }
   .banner-section .owl-carousel .owl-controls {
     position: absolute;
@@ -145,6 +146,7 @@ span.navbar-toggler-icon {
 
 .owl-dots{
     text-align: center;
+    margin-top: 15px;
   }
   
   .owl-dot {
@@ -172,6 +174,11 @@ span.navbar-toggler-icon {
     left: -80px;
     position: absolute;
     z-index: -1;
+}
+.text-yellow {
+  color: #ffc600 !important;
+  font-weight: 600;
+  text-decoration: none;
 }
 /* Contact page */
 .contact .card {
@@ -327,6 +334,9 @@ footer {
     .footer-column ul {
         text-align: left;
       }
+      table thead th {
+        padding:8px;
+      }
   }
   .our-brands {
     height: 80vh;
@@ -336,12 +346,63 @@ footer {
     align-items: center;
   }
 .our-brands .client-img {
-  border: 0px solid #e9ecef !important;
+  border: 3px solid #efefef !important;
+  height: 420px;
+  transition: 0.3s;
 }
+.our-brands .client-img:hover { 
+  background: rgb(86 191 189 / 50%);
+}
+
 .page-section {
   justify-content: center;
   align-items: center;
 }
+/* image section for manufacturing page */
+
+.man-section {
+padding: 15px;
+}
+.man-section img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: 260px;
+  grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+
+
 /* For mobile phones: */
   @media only screen and (max-width: 768px) {
     .banner-section .owl-carousel .owl-slide img {
@@ -360,4 +421,53 @@ footer {
     .media-section iframe {
         width: 100% !important;
     }
+    #no-more-tables td{
+      font-size: 12px;
   }
+  }
+  #no-more-tables td{
+    padding: 10px;
+}
+@media only screen and (max-width: 800px) {
+
+#no-more-tables table, 
+#no-more-tables thead, 
+#no-more-tables tbody, 
+#no-more-tables th, 
+#no-more-tables td, 
+#no-more-tables tr { 
+display: block; 
+}
+
+#no-more-tables thead tr { 
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+
+#no-more-tables tr {
+     border: 1px solid #ccc;
+     }
+
+#no-more-tables td { 
+border: none;
+border-bottom: 1px solid #eee; 
+position: relative;
+padding-left: 50%; 
+white-space: normal;
+text-align:left;
+}
+
+#no-more-tables td:before { 
+position: absolute;
+top: 6px;
+left: 6px;
+width: 45%; 
+padding-right: 10px; 
+white-space: normal;
+text-align:left;
+font-weight: bold;
+}
+
+#no-more-tables td:before { content: attr(data-title); }
+}
