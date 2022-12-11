@@ -53,7 +53,9 @@ span.navbar-toggler-icon {
     left: 10%;
     border-radius: 2px;
 }
-
+.navbar-brand > img {
+	padding-left:40px;
+}
 .banner-section .custom-control {
     position: absolute;
     top: 2em;
@@ -82,7 +84,7 @@ span.navbar-toggler-icon {
   .banner-section .owl-carousel .owl-slide img {
     width: 100%;
     height: auto;
-    margin-top: 60px;
+    margin-top: 55px;
   }
   .banner-section .owl-carousel .owl-controls {
     position: absolute;
@@ -413,6 +415,7 @@ padding: 15px;
     }
     .navbar-brand img {
         width:280px;
+	padding-left: 0px !important;
     }
     .col-reversed{
         flex-direction: column-reverse;
