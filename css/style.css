@@ -409,7 +409,7 @@ padding: 15px;
   @media only screen and (max-width: 768px) {
     .banner-section .owl-carousel .owl-slide img {
       height: 550px;
-      width: auto !important;
+      /*width: auto !important; */
     }
     .navbar-brand img {
         width:280px;
